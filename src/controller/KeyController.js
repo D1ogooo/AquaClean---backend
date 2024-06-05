@@ -4,10 +4,10 @@ class KeyController {
   async create(req, res) {
     const { key } = req.body;
     try {
-      const createKey = await Key.create({ key });
-      res.status(200).send(createKey);
+     const createKey = await Key.create({ key });
+     res.status(200).send(createKey);
     } catch (error) {
-      res.status(400).send(error);
+     res.status(400).send(error);
     }
   }
 
